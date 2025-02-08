@@ -37,10 +37,10 @@ const title = [{"singer": "거미", "songs": ["그대 돌아오면", "음악이 
     {"singer": "최유리", "songs": ["숲", "밤바다"]}, {"singer": "츄", "songs": ["고백"]},
     {"singer": "치즈", "songs": ["어떻게 생각해", "이렇게 좋아해 본 적이 없어요", "Madeleine Love", "Mood Indigo"]}, {"singer": "케이시", "songs": ["그때가 좋았어", "마중", "진심이 담긴 노래"]}, 
     {"singer": "쿨", "songs": ["아로하", "애상"]}, {"singer": "태연", "songs": ["그대라는 시", "들리나요", "만약에", "제주도의 푸른 밤", "Rain", "Weekend"]}, {"singer": "파테코/PATEKO", "songs": ["작은 날"]},
-    {"singer": "헤일", "songs": ["어떨 것 같아"]}; 
+    {"singer": "헤일", "songs": ["어떨 것 같아"]}]; 
 const trot = [{"singer": "서주경", "songs": ["당돌한 여자"]},
     {"singer": "윤수현", "songs": ["천태만상"]},
-    {"singer": "홍진영", "songs": ["사랑의 배터리"]}; 
+    {"singer": "홍진영", "songs": ["사랑의 배터리"]}]; 
 const popsong = [{"singer": "Alicia Keys", "songs": ["If I Ain't Got You"]}, {"singer": "Carpenters", "songs": ["Close to you"]},
     {"singer": "Daniel Caesar", "songs": ["Best Part"]},
     {"singer": "Frank Sinatra", "songs": ["Fly me tothe moon"]},
@@ -54,7 +54,7 @@ const popsong = [{"singer": "Alicia Keys", "songs": ["If I Ain't Got You"]}, {"s
     {"singer": "Stan Getz, Joao Gilberto", "songs": ["The Girl From Ipanema"]},
     {"singer": "Stephanie Poetri", "songs": ["I Love You 3000"]},
     {"singer": "Tamia", "songs": ["Officially Missing You"]},
-    {"singer": "The Beatles", "songs": ["I Will"]}; 
+    {"singer": "The Beatles", "songs": ["I Will"]}]; 
 const disney = [{"singer": "디즈니", "songs": ["Speechless (알라딘)"]},
     {"singer": "Dr.Cantabile", "songs": ["A Whole New World (알라딘)"]},
     {"singer": "Dr.Cantabile", "songs": ["When Will My Life Begin? (라푼젤)"]},
@@ -64,7 +64,7 @@ const disney = [{"singer": "디즈니", "songs": ["Speechless (알라딘)"]},
     {"singer": "Naomi Scott/나오미스콧", "songs": ["나 언젠간 떠날 거야 (모아나)"]},
     {"singer": "Naomi Scott/나오미스콧", "songs": ["Part Of Your World (인어공주)"]},
     {"singer": "오오오", "songs": ["Reflection (뮬란)"]}];
-const duet = [{"singer": "애교송", "songs": ["고양이송", "귀요미송", "멋쟁이토마토", "바나나차차", "살구송", "아기공룡둘리", "아기상어", "짱구는못말려"]}; 
+const duet = [{"singer": "애교송", "songs": ["고양이송", "귀요미송", "멋쟁이토마토", "바나나차차", "살구송", "아기공룡둘리", "아기상어", "짱구는못말려"]}]; 
 const newUpdate = ["내 여자 - The One", "말리꽃 - 이승철", "모래 알갱이 - 임영웅", "바람이 불었으면 좋겠어 - 길구봉구", "천년의 사랑 - 이영현", "Heaven - 김현성"];
 let songsPerRow; // 한 줄에 몇 개까지 나열할 건지
 
