@@ -176,13 +176,11 @@ function showAll() {// 목록 전부 보여주기
     showTable(title);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"trot\">트로트</h3></caption>";
     showTable(trot);
-    htmlText += "<br><table align=\"center\" <caption><h3 id=\"mrTrot\">미스터트롯</h3></caption>";
-    showTable(mrTrot);
-    htmlText += "<br><table align=\"center\" <caption><h3 id=\"old\">옛 가요</h3></caption>";
-    showTable(old);
-    htmlText += "<br><table align=\"center\" <caption><h3 id=\"other\">팝, 애니</h3></caption>";
+    htmlText += "<br><table align=\"center\" <caption><h3 id=\"popsong\">팝송</h3></caption>";
     showTable(other);
-    htmlText += "<br><table align=\"center\" <caption><h3 id=\"duet\">듀엣</h3></caption>";
+    htmlText += "<br><table align=\"center\" <caption><h3 id=\"Disney\">디즈니</h3></caption>";
+    showDuet();
+    htmlText += "<br><table align=\"center\" <caption><h3 id=\"Cute\">애교송</h3></caption>";
     showDuet();
 
     document.getElementById("show").innerHTML = htmlText;
