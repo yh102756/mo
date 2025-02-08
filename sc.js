@@ -169,7 +169,7 @@ function showAll() {// 목록 전부 보여주기
     showTable(title);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"trot\">트로트</h3></caption>";
     showTable(trot);
-    htmlText += "<br><table align=\"center\" <caption><h3 id=\"old\">팝송</h3></caption>";
+    htmlText += "<br><table align=\"center\" <caption><h3 id=\"popsong\">팝송</h3></caption>";
     showTable(popsong);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"other\">팝, 애니</h3></caption>";
     showTable(other);
