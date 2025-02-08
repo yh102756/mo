@@ -170,11 +170,11 @@ function showAll() {// 목록 전부 보여주기
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"trot\">트로트</h3></caption>";
     showTable(trot);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"popsong\">팝송</h3></caption>";
-    showTable(other);
+    showTable(popsong);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"Disney\">디즈니</h3></caption>";
-    showDuet();
+    showTable(Disney);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"Cute\">애교송</h3></caption>";
-    showDuet();
+    showCute();
 
     document.getElementById("show").innerHTML = htmlText;
     allHtml = htmlText;
@@ -279,11 +279,10 @@ function search(str) {// 검색 결과 띄우기
             wordslen.push(wordlen);
         }
         ({ searchedSinger, searchedSong } = searchTable(title, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(trot, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(mrTrot, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(old, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(other, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(duet, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(popsong, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(Disney, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(cute, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(Cute, words, wordslen, numwords, searchedSinger, searchedSong));
         document.getElementById("show").innerHTML = searchedSinger + searchedSong;
     }
 }
