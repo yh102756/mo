@@ -281,7 +281,6 @@ function search(str) {// 검색 결과 띄우기
         ({ searchedSinger, searchedSong } = searchTable(title, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(popsong, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(Disney, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(cute, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(Cute, words, wordslen, numwords, searchedSinger, searchedSong));
         document.getElementById("show").innerHTML = searchedSinger + searchedSong;
     }
