@@ -174,7 +174,7 @@ function showAll() {// 목록 전부 보여주기
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"Disney\">디즈니</h3></caption>";
     showTable(Disney);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"Cute\">애교송</h3></caption>";
-    showCute();
+    showTable(Cute);
 
     document.getElementById("show").innerHTML = htmlText;
     allHtml = htmlText;
@@ -279,6 +279,7 @@ function search(str) {// 검색 결과 띄우기
             wordslen.push(wordlen);
         }
         ({ searchedSinger, searchedSong } = searchTable(title, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(popsong, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(popsong, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(Disney, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(Cute, words, wordslen, numwords, searchedSinger, searchedSong));
