@@ -109,9 +109,9 @@ function showAll() {// 목록 전부 보여주기
     showTable(trot);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"popsong\">팝송</h3></caption>";
     showTable(popsong);
-    htmlText += "<br><table align=\"center\" <caption><h3 id=\"other\">팝, 애니</h3></caption>";
-    showTable(other);
-    htmlText += "<br><table align=\"center\" <caption><h3 id=\"duet\">듀엣</h3></caption>";
+    htmlText += "<br><table align=\"center\" <caption><h3 id=\"disney\">디즈니</h3></caption>";
+    showTable(disney);
+    htmlText += "<br><table align=\"center\" <caption><h3 id=\"duet\">애교송</h3></caption>";
     showDuet();
 
     document.getElementById("show").innerHTML = htmlText;
@@ -219,7 +219,7 @@ function search(str) {// 검색 결과 띄우기
         ({ searchedSinger, searchedSong } = searchTable(title, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(trot, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(popsong, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(other, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(disney, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(duet, words, wordslen, numwords, searchedSinger, searchedSong));
         document.getElementById("show").innerHTML = searchedSinger + searchedSong;
     }
