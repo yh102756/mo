@@ -95,6 +95,6 @@
             <small>made by 메롱</small>
         </span>
       </p>
-      <script src="yh102756"></script>
+      <script src="sc.js"></script>
   </body>
 </html>
