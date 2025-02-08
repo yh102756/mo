@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html>  
   <head>
-        <title>배그나 노래 리스트</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="Bsong.ico">
-        <link rel="apple-touch-icon" href="Bsong.ico">
-        <meta property="og:image" content="Bsong.ico">
-        <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    </head>
-    <body onload="showAll()">
-        <h1>배그나의 아는 곡 리스트</h1>
-        <p>"가수 또는 제목으로 검색"
-           <small style="color: rgb(150, 200, 100)"> 2023.09.17 update</small>
-      </p>
-        <p>
-            <input id="searchBox" type="text" oninput="search(this.value)">
-            <button onclick="cleartext()" onmouseenter="changecolor(this)" onmouseleave="returncolor(this)" style="background-color: rgb(250, 50, 100); color: rgb(255, 255, 255);">초기화</button>
-        </p>
-        <p id="show">
-          <table id="new" align="center">
-          <tbody>
-          <tr>
-            <td style="background-color: rgb(50, 250, 150);" rowspan="2">New</td>
-            <td style="width:29%;">내 여자 - The One</td>
-            <td style="width:29%;">말리꽃 - 이승철</td>
-            <td style="width:29%;">모래 알갱이 - 임영웅</td>
-          </tr>
-          <tr>
-            <td style="width:29%;">바람이 불었으면 좋겠어 - 길구봉구</td>
-            <td style="width:29%;">천년의 사랑 - 이영현</td>
-            <td style="width:29%;">Heaven - 김현성</td>
-          </tr>
-        </tbody>
-      </table>
+    <title>배그나 노래 리스트</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Bsong.ico">
+    <link rel="apple-touch-icon" href="Bsong.ico">
+    <meta property="og:image" content="Bsong.ico">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  </head>
+  <body onload="showAll()">
+    <h1>배그나의 아는 곡 리스트</h1>
+    <p>
+      "가수 또는 제목으로 검색"
+      <small style="color: rgb(150, 200, 100)"> 2023.09.17 update</small>
+    </p>
+    <p>
+      <input id="searchBox" type="text" oninput="search(this.value)">
+      <button onclick="cleartext()" onmouseenter="changecolor(this)" onmouseleave="returncolor(this)" style="background-color: rgb(250, 50, 100); color: rgb(255, 255, 255);">초기화</button>
+    </p>
+    <p id="show">
+      <table id="new" align="center">
+        <tbody>
+        <tr>
+          <td style="background-color: rgb(50, 250, 150);" rowspan="2">New</td>
+          <td style="width:29%;">내 여자 - The One</td>
+          <td style="width:29%;">말리꽃 - 이승철</td>
+          <td style="width:29%;">모래 알갱이 - 임영웅</td>
+        </tr>
+        <tr>
+          <td style="width:29%;">바람이 불었으면 좋겠어 - 길구봉구</td>
+          <td style="width:29%;">천년의 사랑 - 이영현</td>
+          <td style="width:29%;">Heaven - 김현성</td>
+        </tr>
+      </tbody>
+    </table>
     <br>
-  <table id="baegna" align="center">
-    <tbody>
-      <tr>
-        <th rowspan="3">배그나(은하수)</th>
-        <td style="width:14.5%;">나란여자</td>
-        <td style="width:14.5%;">내사랑구례</td>
-        <td style="width:14.5%;">너라는마법</td>
-        <td style="width:14.5%;">뚝뚝뚝</td>
-        <td style="width:14.5%;">못참아</td>
-        <td style="width:14.5%;">소꿉친구</td>
-      </tr>
-      <tr>
-        <td style="width:14.5%;">숨겨온마음</td>
-        <td style="width:14.5%;">안돼요돼요</td>
-        <td style="width:14.5%;">애태우다</td>
+    <table id="baegna" align="center">
+      <tbody>
+        <tr>
+          <th rowspan="3">배그나(은하수)</th>
+          <td style="width:14.5%;">나란여자</td>
+          <td style="width:14.5%;">내사랑구례</td>
+          <td style="width:14.5%;">너라는마법</td>
+          <td style="width:14.5%;">뚝뚝뚝</td>
+          <td style="width:14.5%;">못참아</td>
+          <td style="width:14.5%;">소꿉친구</td>
+        </tr>
+        <tr>
+          <td style="width:14.5%;">숨겨온마음</td>
+          <td style="width:14.5%;">안돼요돼요</td>
+          <td style="width:14.5%;">애태우다</td>
         </tr>
       </tbody>
     </table>
     <br>
     <h3 id="other">팝, 애니</h3>
-    <table align="center" <caption="">
+    <table align="center" <caption>
       <tbody>
         <tr><th rowspan="1">등려군</th>
         <td style="width:14.5%;">월량대표아적심(첨밀밀 OST)</td>
