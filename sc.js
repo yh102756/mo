@@ -91,7 +91,14 @@ const trot = [{"singer": "강민주", "songs": ["회룡포"]}, {"singer": "강�
     {"singer": "편승엽", "songs": ["찬찬찬"]}, {"singer": "한혜진", "songs": ["갈색추억", "너는내남자", "마지막연인", "서울의밤"]},
     {"singer": "홍자", "songs": ["눈물의술잔", "혼잣말"]}, {"singer": "홍지윤", "songs": ["오라"]}, {"singer": "홍진영", "songs": ["그대오는날", "내사랑", "눈물비", "니가있었다", "달의그림자/클랜즈:달의그림자 OST", "따르릉", "부기맨", "비바라비다", "사랑은꽃잎처럼", "사랑은다이러니", "사랑의배터리", "사랑의와이파이", "사랑이좋아", "산다는건", "안돼요", "엄지척", "오늘밤에", "잘가라"]},
     {"singer": "LPG/엘피지", "songs": ["사랑의초인종"]}];
-const popsong = [{"singer": "강수지", "songs": ["시간속의향기"]}, {"singer": "강승모", "songs": ["무정부르스"]},
+const mrTrot = [{"singer": "김호중", "songs": ["고맙소", "너나나나", "살았소", "태클을걸지마", "할무니"]},
+    {"singer": "김희재", "songs": ["별, 그대/별그대"]}, {"singer": "사랑의콜센타", "songs": ["날보러와요"]},
+    {"singer": "영탁", "songs": ["니가왜거기서나와", "막걸리한잔", "우리정말나쁘다", "이불", "추억으로가는당신"]},
+    {"singer": "이찬원", "songs": ["시절인연", "진또배기"]},
+    {"singer": "임영웅", "songs": ["가슴은알죠/나예원", "다시만날수있을까", "모래알갱이", "무지개", "별빛같은나의사랑아", "보랏빛엽서", "사랑은늘도망가/이문세", "사랑이이런건가요", "아버지", "어느날문득", "오래된노래", "우리들의블루스", "이제나만믿어요", "일편단심민들레야"]},
+    {"singer": "장민호", "songs": ["내이름아시죠", "저어라", "정답은없다", "파트너(with정동원)/남진"]},
+    {"singer": "정동원", "songs": ["여백", "청춘", "청포도사나이", "파트너(with장민호)/남진"]}];
+const old = [{"singer": "강수지", "songs": ["시간속의향기"]}, {"singer": "강승모", "songs": ["무정부르스"]},
     {"singer": "구창모", "songs": ["희나리"]},
     {"singer": "김광석", "songs": ["너무아픈사랑은사랑이아니었음을", "바람이불어오는곳", "서른즈음에", "어느60대노부부이야기", "이등병의편지", "잊어야한다는마음으로"]},
     {"singer": "김신우", "songs": ["귀거래사"]}, {"singer": "김연숙", "songs": ["그날"]},
@@ -118,12 +125,12 @@ const popsong = [{"singer": "강수지", "songs": ["시간속의향기"]}, {"sin
     {"singer": "채은옥", "songs": ["빗물"]}, {"singer": "최연재", "songs": ["너의마음을내게준다면"]}, {"singer": "한경애", "songs": ["옛시인의노래"]},
     {"singer": "햇빛촌", "songs": ["유리창엔비"]}, {"singer": "혜령", "songs": ["슬픔을참는세가지방법"]},
     {"singer": "혜은이", "songs": ["당신은모르실거야", "비가", "새벽비", "열정", "옛사랑의돌담길", "제3한강교", "진짜진짜좋아해"]}];
-const Disney = [{"singer": "등려군", "songs": ["월량대표아적심(첨밀밀 OST)"]},
+const other = [{"singer": "등려군", "songs": ["월량대표아적심(첨밀밀 OST)"]},
     {"singer": "Dr.Cantabile", "songs": ["달빛의전설(세일러문 OST)"]},
     {"singer": "Idina Menzel", "songs": ["Let It Go(겨울왕국 OST)/렛잇고"]},
     {"singer": "Naomi Scott/나오미스콧", "songs": ["Speechless(알라딘 OST)/스피치리스"]},
     {"singer": "", "songs": ["검정고무신", "달려라하니", "세일러문", "시대를초월한마음(이누야샤)", "안녕디지몬", "우리는모두친구(포켓몬)"]}];
-const Cute = [{"singer": "남진, 장윤정", "songs": ["당신이좋아"]}, {"singer": "박정현, 임재범", "songs": ["사랑보다깊은상처"]},
+const duet = [{"singer": "남진, 장윤정", "songs": ["당신이좋아"]}, {"singer": "박정현, 임재범", "songs": ["사랑보다깊은상처"]},
     {"singer": "윤민수, 장혜진", "songs": ["그남자그여자", "술이문제야"]}];
 const newUpdate = ["내 여자 - The One", "말리꽃 - 이승철", "모래 알갱이 - 임영웅", "바람이 불었으면 좋겠어 - 길구봉구", "천년의 사랑 - 이영현", "Heaven - 김현성"];
 let songsPerRow; // 한 줄에 몇 개까지 나열할 건지
@@ -169,10 +176,10 @@ function showAll() {// 목록 전부 보여주기
     showTable(title);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"trot\">트로트</h3></caption>";
     showTable(trot);
-    htmlText += "<br><table align=\"center\" <caption><h3 id=\"popsong\">팝송</h3></caption>";
-    showTable(popsong);
-    htmlText += "<br><table align=\"center\" <caption><h3 id=\"Disney\">디즈니</h3></caption>";
-    showTable(Disney);
+    htmlText += "<br><table align=\"center\" <caption><h3 id=\"old\">옛 가요</h3></caption>";
+    showTable(old);
+    htmlText += "<br><table align=\"center\" <caption><h3 id=\"other\">팝, 애니</h3></caption>";
+    showTable(other);
     htmlText += "<br><table align=\"center\" <caption><h3 id=\"duet\">듀엣</h3></caption>";
     showDuet();
 
@@ -280,9 +287,10 @@ function search(str) {// 검색 결과 띄우기
         }
         ({ searchedSinger, searchedSong } = searchTable(title, words, wordslen, numwords, searchedSinger, searchedSong));
         ({ searchedSinger, searchedSong } = searchTable(trot, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(popsong, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(Disney, words, wordslen, numwords, searchedSinger, searchedSong));
-        ({ searchedSinger, searchedSong } = searchTable(Cute, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(mrTrot, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(old, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(other, words, wordslen, numwords, searchedSinger, searchedSong));
+        ({ searchedSinger, searchedSong } = searchTable(duet, words, wordslen, numwords, searchedSinger, searchedSong));
         document.getElementById("show").innerHTML = searchedSinger + searchedSong;
     }
 }
@@ -456,4 +464,3 @@ function singerSearch(searchedSinger, spannum, singer, searchResult, numwords, s
     searchedSinger += singer.substr(pos + strlen[index]) + "</td>"; // 마지막 단어 검색 후
     return searchedSinger;
 }
-
