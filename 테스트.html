@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>노래 리스트</title>
+        <link rel="stylesheet" href="test.css">
+        <link rel="shortcut icon" href="moment.ico">
+        <link rel="apple-touch-icon" href="moment.ico">
+        <meta property="og:image" content="moment.ico">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <meta charset="UTF-8">
+        <style>
+        .example {
+            margin-bottom: 20px; /* 아래쪽 여백을 50px 추가 */
+        }
+    </style>
+          
+    </head>
+    <body onload="showAll(); scrollToTop();">
+        <h1>리스트</h1>
+        <p>가수 or 제목 으로 검색<small style="color: rgb(250, 200, 100)"> 2025.02.12 update</small></p>
+        <p>
+            <input id="searchBox" type="text" oninput="search(this.value)">
+            <button onclick="cleartext()"
+                onmouseenter="changecolor(this)"
+                onmouseleave="returncolor(this)"
+                style="background-color: rgb(250, 50, 100);">지우기</button>
+        </p>
+        <p id="show"></p><br><br><br><br>
+
+ <p>오늘의 방문자 수: <span id="visitorCount">0</span></p>
+
+
+        <p class="index">
+            <button onclick="location.href=''"
+                onmouseenter="returncolor(this)"
+                onmouseleave="changecolor(this)"
+                style="background-color: #4CAF50;
+                    color: black;">맨 위</button>
+            <button onclick="location.href='#trot'"
+                onmouseenter="changecolor(this)"
+                onmouseleave="returncolor(this)"
+                style="background-color: rgb(250, 50, 150);">트로트</button>
+            <button onclick="location.href='#popsong'"
+                onmouseenter="changecolor(this)"
+                onmouseleave="returncolor(this)"
+                style="background-color: rgb(50, 150, 250);">팝송</button>
+            <button onclick="location.href='#disney'"
+                onmouseenter="changecolor(this)"
+                onmouseleave="returncolor(this)"
+                style="background-color: rgb(50, 200, 250);">디즈니</button>
+             <button onclick="location.href='#duet'"
+                onmouseenter="changecolor(this)"
+                onmouseleave="returncolor(this)"
+                style="background-color: rgb(50, 200, 250);">애교송</button>
+          <button onclick="window.open('file:///C:/Users/kys0918/Desktop/%EC%9A%B0%EC%95%99.html', '_blank')" 
+        onmouseenter="changecolor(this)"
+        onmouseleave="returncolor(this)"
+        style="background-color: rgb(50, 200, 250);">라이브</button>
+            <span style="background-color: white; padding: 1px 10px 3px 10px; border-radius: 4px; border: 2px solid rgb(50, 250, 200);"><small>제작자 매니저</small></span>
+
+
+       
+        <script src="test.js"></script>
+        <script src="test1.js"></script>
+    </body>
+</html>
